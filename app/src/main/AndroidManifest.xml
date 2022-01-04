@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComplexView">
-        <activity android:name=".TapTapView.MainActivity3">
+        <activity
+            android:name=".ViewBasic.RectOrRectF.RectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ViewPosBasic.MainActivity2">
+        <activity android:name=".TapTapView.MainActivity3">
 
         </activity>
-        <activity android:name=".Dimple.MainActivity"></activity>
+        <activity android:name=".ViewPosBasic.MainActivity2" />
+        <activity android:name=".Dimple.MainActivity" />
     </application>
 
 </manifest>
