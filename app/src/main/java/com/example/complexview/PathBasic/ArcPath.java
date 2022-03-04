@@ -12,9 +12,9 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 public class ArcPath extends View {
-    private Path path;
-    private Paint paint;
-    private RectF rectF;
+    private Path path, path2;
+    private Paint paint, paint2;
+    private RectF rectF, rectF2;
     public ArcPath(Context context) {
         super(context);
         init();
@@ -32,8 +32,11 @@ public class ArcPath extends View {
 
     public void init(){
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
         path = new Path();
+        path2 = new Path();
         rectF = new RectF(100,10,200,100);
+        rectF2 = new RectF(200, 110, 300 ,200);
     }
 
     @Override
@@ -45,5 +48,11 @@ public class ArcPath extends View {
         path.moveTo(10,10);
         path.arcTo(rectF,0,90);
         canvas.drawPath(path,paint);
+
+        paint2.setColor(Color.GREEN);
+        paint2.setStyle(Paint.Style.STROKE);
+        path2.moveTo(110, 110);
+        path2.arcTo(rectF2, 0,90, true);
+        canvas.drawPath(path2, paint2);
     }
 }

@@ -15,7 +15,6 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         var textView = findViewById<TextView>(R.id.location)
-
         textView.viewTreeObserver.addOnGlobalLayoutListener {
             //获取自身宽高
             var height = textView.height

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:orientation="vertical">
+
+    <com.example.complexview.seekbar.NumTipSeekBar
+        android:id="@+id/ntsb_seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:circleButtonColor="@color/white"
+        app:circleButtonRadius="16dp"
+        app:circleButtonTextColor="@color/purple_82"
+        app:circleButtonTextSize="16sp"
+        app:maxProgress="10"
+        app:progressColor="@color/white"
+        app:progressHeight="20dp"
+        app:selectProgress="1"
+        app:tickBarColor="@color/orange_f6"
+        app:tickBarHeight="8dp"
+        />
+
+    <com.example.complexview.seekbar.NumTipSeekBar
+        android:id="@+id/ntsb_seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:circleButtonColor="@color/white"
+        app:circleButtonRadius="10dp"
+        app:circleButtonTextColor="@color/purple_82"
+        app:circleButtonTextSize="16sp"
+        app:isShowButton="true"
+        app:isShowButtonText="false"
+        app:maxProgress="100"
+        app:progressColor="@color/white"
+        app:progressHeight="10dp"
+        app:selectProgress="10"
+        app:tickBarColor="#000000"
+        app:tickBarHeight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/insert_layout"
+        android:layout_width="355dp"
+        android:layout_height="100dp">
+
+        <com.example.complexview.seekbar.SkipDialogSeekbar
+            android:id="@+id/seekbar"
+            android:layout_width="335dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0s"
+            android:layout_below="@+id/seekbar"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60s"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekbar"
+            android:layout_marginEnd="20dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SkipDialogSeekbar">
+        <attr name="sds_thumb_radius" format="dimension|reference" />
+        <attr name="sds_thumb_color" format="color|reference" />
+        <attr name="sds_background_radius" format="dimension|reference" />
+        <attr name="sds_background_color" format="color|reference" />
+        <attr name="sds_progress_radius" format="dimension|reference" />
+        <attr name="sds_progress_color" format="color|reference" />
+        <attr name="sds_initial_progress" format="dimension|reference"/>
+        <attr name="sds_drag_progress" format="dimension|reference"/>
+        <attr name="sds_background_height" format="dimension|reference"/>
+        <attr name="sds_progress_height" format="dimension|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="NumTipSeekBar">
+        <attr name="tickBarHeight" format="dimension"/>
+        <attr name="tickBarColor" format="color"/>
+        <attr name="circleButtonColor" format="color"/>
+        <attr name="circleButtonTextColor" format="color"/>
+        <attr name="circleButtonTextSize" format="dimension"/>
+        <attr name="circleButtonRadius" format="dimension"/>
+        <attr name="progressHeight" format="dimension"/>
+        <attr name="progressColor" format="color"/>
+        <attr name="selectProgress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+        <attr name="isShowButtonText" format="boolean"/>
+        <attr name="isShowButton" format="boolean"/>
+        <attr name="isRound" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextSeekBar">
+        <attr name="thumb" format="reference"/>
+        <attr name="thumbWidth" format="dimension"/>
+        <attr name="thumbHeight" format="dimension"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textBackground" format="reference"/>
+        <attr name="textBgWidth" format="dimension"/>
+        <attr name="textBgHeight" format="dimension"/>
+        <attr name="textPaddingTop" format="dimension"/>
+
+    </declare-styleable>
+
+    <!--自定义的DigitalThumbSeekbar的属性-->
+    <declare-styleable name="DigitalThumbSeekbar">
+        <!--需要显示在进度上的最大值-->
+        <attr name="maxShowValue" format="float">
+        </attr>
+        <!--需要显示的进度模式，整数，保留一位小数，保留两位小数-->
+        <attr name="PrecisionMode" format="enum">
+            <enum name="integer" value="0"></enum>
+            <enum name="float_one" value="1"></enum>
+            <enum name="float_two" value="2"></enum>
+        </attr>
+
+    </declare-styleable>
+</resources>

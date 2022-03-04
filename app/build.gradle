@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('/Users/bytedance/sdk.jks')
+            keyAlias 'china'
+            storePassword '990629'
+            keyPassword '990629'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
